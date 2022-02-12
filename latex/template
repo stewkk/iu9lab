@@ -1,13 +1,14 @@
 \documentclass{iu9lab}
 
-\begin{document}
-
 \title{}
 \author{}
 \teacher{}
 \group{}
 \course{}
 \labnumber{}
+
+\begin{document}
+
 \maketitle
 
 \section{Цели}

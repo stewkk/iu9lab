@@ -1,10 +1,10 @@
 file = report
 
-.PHONY: all cont pdf create clean Clean
+.PHONY: all dev pdf create clean Clean
 
 all: pdf
 
-cont:
+dev:
 	latexmk -pdflua -pdflualatex="lualatex %O %S; ./pplatex -i $(file).log" \
 -view=none -pvc -quiet $(file).tex
 
