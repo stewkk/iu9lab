@@ -60,6 +60,9 @@
 \labnumber{1}
 ```
 
+- [Пример отчета в LaTeX](latex/example.tex)
+- [Результат в pdf](latex/example.pdf)
+
 ### Зависимости
 
 - `TeX Live`
