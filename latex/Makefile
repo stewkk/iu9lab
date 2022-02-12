@@ -5,7 +5,7 @@ file = report
 all: pdf
 
 cont:
-	latexmk -pdflua -pdflualatex="lualatex %O %S; pplatex -i $(file).log" \
+	latexmk -pdflua -pdflualatex="lualatex %O %S; ./pplatex -i $(file).log" \
 -view=none -pvc -quiet $(file).tex
 
 pdf:
