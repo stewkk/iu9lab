@@ -326,6 +326,7 @@ $if(csquotes)$
 \usepackage{csquotes}
 $endif$
 
+\newcommand{\worktype}{$тип_работы$}
 \newcommand{\thetitle}{$название$}
 \newcommand{\theauthor}{$автор$}
 \newcommand{\theteacher}{$преподаватель$}
@@ -370,7 +371,7 @@ $endif$
     \centering
     \topskip0pt
     \vspace*{\fill}
-    Лабораторная работа №\thenumber{}\\
+    \worktype\ №\thenumber{}\\
     <<\thetitle{}>>\\
     по курсу: <<\thecourse{}>>
     \vspace*{\fill}
