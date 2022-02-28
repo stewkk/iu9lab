@@ -24,12 +24,19 @@
   breaklines=true,
 }
 
+\newcommand{\worktype}[1]{\newcommand{\theworktype}{#1}}
 \renewcommand{\title}[1]{\newcommand{\thetitle}{#1}}
 \renewcommand{\author}[1]{\newcommand{\theauthor}{#1}}
 \newcommand{\teacher}[1]{\newcommand{\theteacher}{#1}}
 \newcommand{\group}[1]{\newcommand{\thegroup}{#1}}
 \newcommand{\course}[1]{\newcommand{\thecourse}{#1}}
-\newcommand{\labnumber}[1]{\newcommand{\thenumber}{#1}}
+\newcommand{\labnumber}[1]{\newcommand{\thenumber}{%
+\def\temp{#1}\ifx\temp\empty
+%
+\else
+№\temp
+\fi%
+}}
 
 \renewcommand{\maketitle}
 {
@@ -54,7 +61,7 @@
     \centering
     \topskip0pt
     \vspace*{\fill}
-    Лабораторная работа №\thenumber{}\\
+    \theworktype{} \thenumber{}\\
     <<\thetitle{}>>\\
     по курсу: <<\thecourse{}>>
     \vspace*{\fill}

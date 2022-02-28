@@ -326,12 +326,17 @@ $if(csquotes)$
 \usepackage{csquotes}
 $endif$
 
+\newcommand{\worktype}{$тип_работы$}
 \newcommand{\thetitle}{$название$}
 \newcommand{\theauthor}{$автор$}
 \newcommand{\theteacher}{$преподаватель$}
 \newcommand{\thegroup}{$группа$}
 \newcommand{\thecourse}{$предмет$}
-\newcommand{\thenumber}{$номер$}
+$if(номер)$
+\newcommand{\thenumber}{№$номер$}
+$else$
+\newcommand{\thenumber}{}
+$endif$
 
 \usepackage{geometry}
 
@@ -370,7 +375,7 @@ $endif$
     \centering
     \topskip0pt
     \vspace*{\fill}
-    Лабораторная работа №\thenumber{}\\
+    \worktype\ \thenumber{}\\
     <<\thetitle{}>>\\
     по курсу: <<\thecourse{}>>
     \vspace*{\fill}
