@@ -24,6 +24,7 @@
   breaklines=true,
 }
 
+\newcommand{\worktype}[1]{\newcommand{\theworktype}{#1}}
 \renewcommand{\title}[1]{\newcommand{\thetitle}{#1}}
 \renewcommand{\author}[1]{\newcommand{\theauthor}{#1}}
 \newcommand{\teacher}[1]{\newcommand{\theteacher}{#1}}
@@ -54,7 +55,7 @@
     \centering
     \topskip0pt
     \vspace*{\fill}
-    Лабораторная работа №\thenumber{}\\
+    \theworktype{} №\thenumber{}\\
     <<\thetitle{}>>\\
     по курсу: <<\thecourse{}>>
     \vspace*{\fill}
