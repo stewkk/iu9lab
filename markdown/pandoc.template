@@ -339,6 +339,7 @@ $else$
 $endif$
 
 \usepackage{geometry}
+\geometry{legalpaper, portrait, margin=0.75in}
 
 \usepackage{fontspec}
 \setmainfont{DejaVu Serif}
